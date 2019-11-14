@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        >
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@color/colorPrimaryLight_new"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="Created On"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:textSize="@dimen/Home_rcView_textSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dateCreatedTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/advent_pro_light"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSecondaryText_new"
+                        android:textSize="@dimen/HomeDate_rcView_textSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:text="20 Feb 2019" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@color/colorWhite"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:id="@+id/summaryLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="8dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_arrow_income"
+                            tools:src="@drawable/ic_arrow_income"
+                            />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="4dp"
+                            android:paddingLeft="2dp"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize"
+                            android:text="Income:" />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:id="@+id/totalIncomeTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize"
+                            android:paddingLeft="8dp"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_arrow_expense"
+                            tools:src="@drawable/ic_arrow_expense"
+                            />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize"
+                            android:layout_weight="1"
+                            android:drawablePadding="4dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="Expense: " />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:id="@+id/totalExpenseTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize"
+                            android:paddingLeft="8dp"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1
+"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_account_balance_wallet_black_24dp"
+                            tools:src="@drawable/ic_account_balance_wallet_black_24dp" />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="4dp"
+                            android:paddingStart="2dp"
+                            android:text="Balance:"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize" />
+
+                        <TextView
+                            android:textColor="@color/colorprimaryText_new"
+                            android:id="@+id/totalBalanceTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="8dp"
+                            android:textSize="@dimen/HomeSummary_rcView_textSize"
+                            android:text="0" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorSecondaryText_new"
+                />
+
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/editBudgetBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_edit_primary_12dp"
+                    tools:src="@drawable/ic_edit_primary_12dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/deleteBudgetBtn"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_delete_primary"
+                    tools:src="@drawable/ic_delete_primary" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:alpha="0.005"
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

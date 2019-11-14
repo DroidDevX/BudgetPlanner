@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:background="@color/colorPrimary_new"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:background="@color/colorPrimary_new"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/dateMarkerTV"
+            tools:text="Date:"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:id="@+id/amountMarkerTV"
+            android:fontFamily="@font/roboto_light"
+            tools:text="Amount: "
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

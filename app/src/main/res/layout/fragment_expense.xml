@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:padding="8dp"
+            android:text="Expenses By Amount"
+            android:textAlignment="center"
+            android:textSize="@dimen/SubtotalActivity_subtotalTitleTV_textSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLight_new"
+            />
+
+        <FrameLayout
+            android:id="@+id/expenseBarchart_fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:minHeight="300dp"
+            >
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_marginTop="@dimen/pieChart_marginTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLight_new"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:padding="8dp"
+            android:text="% of Total Expense"
+            android:textAlignment="center"
+            android:textSize="@dimen/SubtotalActivity_subtotalTitleTV_textSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLight_new"
+            />
+
+        <FrameLayout
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/expensePieChart_fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="300dp">
+
+        </FrameLayout>
+
+</LinearLayout>
+
+</ScrollView>

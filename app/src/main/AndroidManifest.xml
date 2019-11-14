@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droiddevsa.budgetplanner">
+
+
+    <application
+        android:roundIcon="@mipmap/ic_launcher"
+        android:name="com.droiddevsa.budgetplanner.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Budget Planner"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.CurrentBudgetActivity.CurrentBudgetActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.AddItemActivity"
+            android:configChanges="orientation|screenSize"
+
+            android:theme="@style/AppTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.EditItemActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:label="Budget Overview"
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.SubtotalActivity.SubtotalActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme" />
+
+        <activity
+
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.HomeActivity.HomeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"
+            />
+
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.droiddevsa.budgetplanner.MVP.UI.View.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            ><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

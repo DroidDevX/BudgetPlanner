@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="8dp"
+                android:rotation="-90"
+                android:text="Y: Amount"
+                android:textSize="@dimen/Home_axislabel_textSize" />
+
+            <FrameLayout
+                android:id="@+id/histogramContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="4dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/defaultAndroidBackground"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/histogram_dashboard_iconpadding"
+                    android:layout_marginEnd="@dimen/histogram_dashboard_iconpadding"
+                    android:background="@color/colorGreen" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Income"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorprimaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_titleSize" />
+
+                <TextView
+                    android:id="@+id/histogramIncomeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_subtitleSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/histogram_dashboard_iconpadding"
+                    android:layout_marginEnd="@dimen/histogram_dashboard_iconpadding"
+                    android:background="@color/colorDeepOrange" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Expense"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorprimaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_titleSize" />
+
+                <TextView
+                    android:id="@+id/histogramExpenseTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_subtitleSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/histogram_dashboard_iconpadding"
+                    android:layout_marginEnd="@dimen/histogram_dashboard_iconpadding"
+                    android:background="@color/colorSecondaryText_new" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorprimaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_titleSize" />
+
+                <TextView
+                    android:id="@+id/histogramBalanceTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText_new"
+                    android:textSize="@dimen/histogram_dashboard_subtitleSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary_new"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/historyMetaData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/histogramDateSelectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            app:srcCompat="@drawable/ic_date_range_white_24dp" />
+
+        <TextView
+            android:paddingEnd="8dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:text="dd/MM/yyyy"
+            android:id="@+id/dateSelectedTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:paddingEnd="8dp"
+            android:min="0"
+            android:id="@+id/histogramSeekBar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/histogramOptionsButton"
+            android:background="@drawable/ic_settings_white_24"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <Button
+        android:visibility="gone"
+        android:text="Click here to increment marker"
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

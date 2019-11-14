@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="?android:attr/fastScrollThumbDrawable"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="right"
+    tools:context=".MVP.UI.View.HomeActivity.HomeActivity"
+    tools:showIn="@layout/app_bar_home"
+    tools:layout_editor_absoluteX="203dp"
+    tools:layout_editor_absoluteY="21dp">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/homeTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight_new"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorSecondaryText_new"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:alpha="0.7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:icon="@drawable/ic_edit_grey_24_dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:icon="@drawable/ic_stats_grey" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:icon="@drawable/ic_accumulatedbalance" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/fragment_home_all_budget_page"
+        />
+
+
+</LinearLayout>

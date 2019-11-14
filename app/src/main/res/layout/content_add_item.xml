@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:isScrollContainer="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarThumbVertical="?android:attr/fastScrollThumbDrawable"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:stretchColumns="*"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="fill_vertical"
+                        android:text="Entry title"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:textSize="@dimen/AddActivity_tv_textSize" />
+
+                    <EditText
+                        android:textColor="@color/colorprimaryText_new"
+                        android:id="@+id/nameInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:gravity="fill_vertical"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        android:text="Category" />
+
+                    <Spinner
+                        android:textColor="@color/colorprimaryText_new"
+                        android:id="@+id/categoryEdit_AddItemActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:gravity="fill_vertical"
+                        android:text="Brand"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                    <EditText
+                        android:hint="(Optional)"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:id="@+id/brandInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="3"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/AddActivity_tv_textSize"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical"
+                        android:layout_span="1"
+                        android:gravity="fill_vertical"
+                        android:text="Amount"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                    <EditText
+                        android:textColor="@color/colorprimaryText_new"
+                        android:id="@+id/amountInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical"
+                        android:layout_span="1"
+                        android:gravity="fill_vertical"
+                        android:text="Quantity"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                    <EditText
+                        android:textColor="@color/colorprimaryText_new"
+                        android:id="@+id/quantityInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_light"
+
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical"
+                        android:layout_span="1"
+                        android:gravity="fill_vertical"
+                        android:text="CashFlow"
+                        android:textSize="@dimen/AddActivity_tv_textSize"
+
+                        />
+
+                    <RadioGroup
+                        android:textColor="@color/colorprimaryText_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3">
+
+                        <RadioButton
+                            android:fontFamily="@font/roboto_light"
+
+                            android:id="@+id/incomeRadio_AddForm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Income"
+                            android:textSize="@dimen/AddActivity_tv_textSize"
+                            />
+
+                        <RadioButton
+                            android:fontFamily="@font/roboto_light"
+                            android:id="@+id/expenseRadio_AddForm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Expense"
+                            android:textSize="@dimen/AddActivity_tv_textSize"
+                            />
+                    </RadioGroup>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:background="@color/colordiv_new" />
+
+        <LinearLayout
+            android:background="@color/colorPrimary_new"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <FrameLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorPrimary_new"
+                    android:drawableBottom="@drawable/ic_arrow_back_white_24dp"
+                    android:onClick="onCancelClicked"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary_new"
+                    android:drawableBottom="@drawable/ic_check_white_24dp"
+                    android:onClick="onAddItemClicked"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textAllCaps="false"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

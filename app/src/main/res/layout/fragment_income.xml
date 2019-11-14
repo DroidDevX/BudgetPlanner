@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fadeScrollbars="false"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:padding="8dp"
+                    android:text="Income By Category"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/SubtotalActivity_subtotalTitleTV_textSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryLight_new"
+                    />
+
+                <FrameLayout
+                    android:id="@+id/incomeBarchart_FragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:minHeight="300dp" />
+
+                <View
+                    android:layout_marginTop="@dimen/pieChart_marginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryLight_new"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:padding="8dp"
+                    android:text="% of Total Income"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/SubtotalActivity_subtotalTitleTV_textSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryLight_new"
+                    />
+
+                <FrameLayout
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:id="@+id/incomePieChart_FragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="300dp">
+
+                </FrameLayout>
+
+
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:background="@color/colorPrimary_new"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+<LinearLayout
+        android:background="@color/colorPrimaryLight_new"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/amount_timelineMarkerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textSize="10dp"
+            tools:text="This is the line chart marker"
+            android:textColor="@color/colorMainTextView"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/date_timelineMarkerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            tools:text="This is the line chart marker"
+            android:textColor="@color/colorMainTextView"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

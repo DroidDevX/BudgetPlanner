@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- App old theme-->
+    <color name="colorPrimary_old">#424242</color>
+    <color name="colorPrimaryDark_old">#1b1b1b</color>
+    <color name="colorPrimaryLight_old">#6d6d6d</color>
+    <color name="colorSecondary_old">#F9A825</color>
+
+
+    <!--App new theme-->
+
+    <color name="colorPrimary_new">#4cAF50</color>
+    <color name="colorPrimaryDark_new">#388E3C</color>
+    <color name="colorPrimaryLight_new">#C8E6C9</color>
+    <color name="colorAccent">#F9A825</color>
+    <color name="colorMainTextView">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorprimaryText_new">#212121</color>
+    <color name="colorSecondaryText_new">#757575</color>
+    <color name="colordiv_new">#BDBDBD</color>
+
+
+
+
+
+    <color name="defaultAndroidBackground">#FAFAFA</color>
+
+    <!-- Material colors-->
+    <color name="colorDeepOrange">#DD2C00</color>
+    <color name="colorGreen">#00C853</color>
+
+
+
+</resources>

@@ -1,0 +1,53 @@
+<resources>
+
+
+    <!--Add item activity -->
+
+
+    <!--RecyclerView items-->
+
+    <string name="itemName">Name</string>
+    <string name="categoryName">Category</string>
+    <string name="amount">Amount</string>
+    <string name="quantity">Quantity</string>
+    <string name="cashFlow">Cashflow</string>
+
+
+    <!--Strings for content_budget_subtotal-->
+
+    <!-- Drop down list currentBudgetActivity.java -->
+    <string-array name="column_display">
+        <item>Item name</item>
+        <item>Category</item>
+        <item>Brand</item>
+        <item>Amount</item>
+        <item>Quantity</item>
+        <item>Cash-flow</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="categories_spinner">
+        <item>Bills</item>
+        <item>Clothing</item>
+        <item>Entertainment</item>
+        <item>Equipment</item>
+        <item>Fees</item>
+        <item>Food</item>
+        <item>Gifts</item>
+        <item>Investments</item>
+        <item>Medical</item>
+        <item>Retirement</item>
+        <item>Salary/Wages</item>
+        <item>Tax</item>
+        <item>Transport</item>
+        <item>Utilities</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+
+</resources>

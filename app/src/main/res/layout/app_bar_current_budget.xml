@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVP.UI.View.CurrentBudgetActivity.CurrentBudgetActivity"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:id="@+id/datePickerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="4dp"
+                    app:srcCompat="@drawable/ic_date_range_white_24dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/dateTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    tools:text="dd/MM/YYY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/displayColumnsBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary_new"
+                    android:drawableTop="@drawable/ic_display"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Display"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/CurrentBudget_toolbarBtn_textSize" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/overviewBudgetBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary_new"
+                    android:drawableTop="@drawable/ic_show_chart_"
+                    android:fontFamily="@font/roboto_light"
+                    android:requiresFadingEdge="horizontal|vertical"
+                    android:text="Overview"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/CurrentBudget_toolbarBtn_textSize" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_currentbudget"
+        app:layout_anchor="@+id/displayColumnsBtn"
+        app:layout_anchorGravity="right|top" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
