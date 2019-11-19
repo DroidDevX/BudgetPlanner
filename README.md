@@ -50,6 +50,10 @@ This fragment contains a recycler view of budgets that the user has recently cre
 # UI events
 - Still part of the home activity view pager, this page contains a scroll bar that displays the selected budget's net income, expense and balance for that particular date it was created in the timeline. The chart used came from a 3rd party library named MPCharts, made by Mike Phil.
 
+- Use the seek bar to select points in the line graph.
+
+- Click on the settings button next to the seek bar to toogle the visibility of the lines.
+
 
 # Home Activity - Accumulated balance tab
 
