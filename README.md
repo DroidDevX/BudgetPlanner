@@ -18,13 +18,13 @@ A fully functional app designed to help users with creating and maintaining thei
 # What problem does it solve?
 
 The answer- paperless solution for personal finance.
-Wouldn't it be nice to have budgets stored in one convenient place without having to use bulky folders? What about auto-generated reports based on the existing budgets that have accumulated over the years? These are some of the thoughts that went through my mind when building this app. Budget Planner aims to address these issues by providing a simple interface which the user can interact with, enabling them to create, edit, and view the financial progress at their finger tips.,
+Wouldn't it be nice to have budgets stored in one convenient place without having to use bulky folders? What about auto-generated reports based on the existing budgets that have accumulated over the years? These are some of the thoughts that went through my mind when building this app. Budget Planner aims to address these issues by providing a simple interface which the user can interact with, enabling them to create, edit, and view the financial progress at their fingertips.,
 
 
 # Architecture
 
 The application follows an MVP architectural design pattern. 
-The codebase is divided into view, presenter and model layers. The activities being the view, which listens for different UI events such as button clicks, view pager swipes, recycler view scrolling. These signals are transmitted to the presenter object in which the activities (i.e view) contains a reference to. The presenter contains logic,
+The codebase is divided into view, presenter, and model layers. The activities being the view, which listens for different UI events such as button clicks, view pager swipes, recycler view scrolling. These signals are transmitted to the presenter object in which the activities (i.e view) contains a reference. The presenter contains logic,
 to determine what the view needs, for instance requesting data from the local SQLite DB cache. This operation is done
 asynchronously using RxJava library, and once completed, makes a callback to the view with the desired results.
 
@@ -32,7 +32,7 @@ This application is divided into activities whose flow goes something like this.
 Home Activity -> CurrentBudgetActivity -> SubtotalActivity
 
 # Home Activity - Budget list tab 
-A fragment defined in the home activity's view pager.
+A fragment is defined in the home activity's view pager.
 This fragment contains a recycler view of budgets that the user has recently created.
 
 <img src="1.png" width="360">
@@ -48,11 +48,11 @@ This fragment contains a recycler view of budgets that the user has recently cre
 <img src="4.jpg" width="360">
 
 # UI events
-- Still part of the home activity view pager, this page contains a scroll bar that displays the selected budget's net income, expense and balance for that particular date it was created in the timeline. The chart used came from a 3rd party library named MPCharts, made by Mike Phil.
+- Still part of the home activity view pager, this page contains a scroll bar that displays the selected budget's net income, expense, and balance for that particular date it was created in the timeline. The chart used came from a 3rd party library named MPCharts, made by Mike Phil.
 
 - Use the seek bar to select points in the line graph.
 
-- Click on the settings button next to the seek bar to toogle the visibility of the lines.
+- Click on the Settings button next to the seek bar to toggle the visibility of the lines.
 
 
 # Home Activity - Accumulated balance tab
@@ -76,7 +76,7 @@ You may add, edit and delete items as you please, as indicated by their correspo
 
 - Towards the top right corner of the activity's toolbar, you will notice two buttons titled display and overview.
     - Clicking on the Display button brings up the alert dialog fragment that prompts the user to select which columns for each entry should be visible
-    - Clicking on the Overview button brings the user to the subtotal activity, which displays the subtotals in of the budget in graphs
+    - Clicking on the Overview button brings the user to the subtotal activity, which displays the subtotals of the budget in graphs
    
 - Clicking on the calendar icon on the top left of the toolbar would bring out a date picker dialog fragment that the user can interact with to change the creation date of the budget.
 
